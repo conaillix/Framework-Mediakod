@@ -41,7 +41,7 @@ $c-aqua:    #00ffff ;
 
 //Ajouter les variables dans la liste pour les nuances de couleurs
 //Pour chaque couleur, 10 nouvelles class se créent avec chacune une luminosité différente 
-//avec la nomenclature suivante .c-red-1  --> 1 = le plus clair, 10 = le plus sombre
+//avec la nomenclature suivante var(--c-red-1) --> 0 = le plus clair, 9 = le plus sombre
 
 $colors: (
   "green":    $c-green,

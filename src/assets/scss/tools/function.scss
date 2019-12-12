@@ -28,9 +28,9 @@
 
 @each $name, $color in $colors{
   @each $suffix, $value in colortoarray($color) {
-  .c-#{$name}-#{$suffix} {
-   	background-color: $value;
-  	}
+		:root {
+			--c-#{$name}-#{$suffix}: #{$value};
+		} 
     
   }
 }
