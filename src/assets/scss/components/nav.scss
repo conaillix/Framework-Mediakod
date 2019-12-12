@@ -1,0 +1,28 @@
+//nav.scss
+
+header{
+  nav{
+    ul{
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: space-between;
+      transition: all .3s ease-out;
+
+      @include vh(true);
+    } 
+
+    @media (min-width: $min-width-tablet) {
+      ul{
+        @include vh-reset;
+        flex-flow: row wrap;
+      }
+    }
+ 
+  }
+
+  .toggle-menu{
+    @media (min-width: $min-width-tablet){
+      display: none;
+    }
+  }
+}

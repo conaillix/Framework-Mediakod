@@ -10,13 +10,23 @@ body{
   color: $c-font-base;
 
   @media (min-width: $max-width-mobile){
-    font-size: $base-fontsize-mobile;
+    $base-fontsize: 1rem;
   }
   @media (min-width: $min-width-tablet){
-    font-size: $base-fontsize-tablet;
+    $base-fontsize: 1rem;
   }
   @media (min-width: $min-width-desktop){
-    font-size: $base-fontsize-desktop;
+    $base-fontsize: 3rem;
+  }
+
+  @media (min-width: $max-width-mobile){
+    font-size: $base-fontsize;
+  }
+  @media (min-width: $min-width-tablet){
+    font-size: $base-fontsize;
+  }
+  @media (min-width: $min-width-desktop){
+    font-size: $base-fontsize;
   }
   
 }
@@ -27,6 +37,7 @@ h1,h2,h3,h4,h5,h6{
   line-height: $title-lineheight;
   font-family: $title-font;
   font-weight: $title-weight;
+  font-size: $title-fontsize;
 
   margin:0;
 }

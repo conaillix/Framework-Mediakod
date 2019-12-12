@@ -1,14 +1,6 @@
 // Settings
 
-/*   -------------------     Colors     -------------------   */
-
-@import "colors.scss";
-
-/*   -------------------     Fonts     -------------------   */
-
-@import "fonts.scss";
-
-/*   -------------------     Layout    -------------------   */
+//   -------------------     Layout    -------------------  
 
 //Grid
 
@@ -17,14 +9,24 @@ $column-width: 100%;
 
 //Breakpoint (responsive)
 
-$max-width-mobile: 411px;
-$min-width-tablet: 768px;
-$min-width-desktop: 1024px;
-$max-width-desktop: 1440px;
+$max-width-mobile: rem(411px);
+$min-width-tablet: rem(768px);
+$min-width-desktop: rem(1024px);
+$max-width-desktop: rem(1440px);
 
 //Margin - Padding
 
 $container-padding: 1rem;
 $section-margin: 3rem;
 
+//Gap 
+
+$gap-small: 1rem;
+$gap-medium: 1.5rem;
+$gap-large: 2rem;
+
+$grid-query-medium: rem(780px);
+$grid-query-large: rem(1440px);
+
+$nav-main-query: rem(780px);
 

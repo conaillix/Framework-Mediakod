@@ -4,7 +4,7 @@
   width: 100%;
   max-width: $max-width-desktop;
   margin: 0 auto;
-  padding: $container-padding;
+  padding: 0 $container-padding;
 }
 
 section{
@@ -14,3 +14,30 @@ section{
 
 //Gap 
 
+:root{
+    --gap: #{$gap-small};
+
+    @media(min-width: $grid-query-medium){
+		--gap: #{$gap-medium};
+	}
+
+	@media(min-width: $grid-query-large){
+		--gap: #{$gap-large};
+	}
+}
+
+.grid{
+    display: grid;
+    grid-gap: $gap-small;
+    grid-gap: var(--gap, $gap-small);
+
+    @media(min-width: $grid-query-medium){
+        grid-gap: $gap-medium;
+        grid-gap: var(--gap, $gap-medium);
+	}
+
+	@media(min-width: $grid-query-large){
+        grid-gap: $gap-large;
+        grid-gap: var(--gap, $gap-large);
+	}
+}

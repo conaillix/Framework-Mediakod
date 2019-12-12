@@ -9,9 +9,13 @@
 @import "tools/tools.scss";
 @import "tools/function.scss";
 @import "tools/mixin.scss";
+@import "tools/components/buttons.scss";
 
 //Generic
 @import "generic/generic.scss";
+@import "generic/form.scss";
+@import "generic/reset.scss";
+@import "generic/table.scss";
 @import "generic/typography.scss";
 @import "generic/layout.scss";
 

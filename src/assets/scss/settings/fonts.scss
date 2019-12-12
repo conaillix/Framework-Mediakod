@@ -1,6 +1,6 @@
 //fonts.scss
 
-/*   -------------------     Fonts     -------------------   */
+//   -------------------     Fonts     -------------------   
 
 //Text
 
@@ -11,15 +11,19 @@ $base-weight: 400;
 
 $text-maxwidth: 64ch;
 
-$base-fontsize-mobile: 1rem;
-$base-fontsize-tablet: 1rem;
-$base-fontsize-desktop: 1rem;
+$font-size-smaller: .8rem;
+$font-size-small: 1rem;
+$font-size-medium: 1.125rem;
+$font-size-large: 1.25rem;
 
 //Titles
 
 $title-font: "",sans-serif;
 $title-lineheight: 1.1;
 $title-weight: 700;
+$title-fontsize: 2rem;
+
+$title-main-fontsize: 6rem;
 
 //Links
 

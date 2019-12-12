@@ -5,7 +5,6 @@
 @function colorbyunit($color, $dozen, $unit){
   $saturation: saturation($color);
   $hue: hue($color);
-	$color: lighten($color, 100%);
 	@return hsl($hue, $saturation, (100 - ($dozen*10))+$unit);
 }
 
