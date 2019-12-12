@@ -1,0 +1,16 @@
+//Layout
+
+.container{
+  width: 100%;
+  max-width: $max-width-desktop;
+  margin: 0 auto;
+  padding: $container-padding;
+}
+
+section{
+  margin-bottom: $section-margin; 
+  width: 100%;
+}
+
+//Gap 
+

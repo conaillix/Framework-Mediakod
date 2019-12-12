@@ -1,0 +1,30 @@
+// Settings
+
+/*   -------------------     Colors     -------------------   */
+
+@import "colors.scss";
+
+/*   -------------------     Fonts     -------------------   */
+
+@import "fonts.scss";
+
+/*   -------------------     Layout    -------------------   */
+
+//Grid
+
+$column-nbr: 12;
+$column-width: 100%;
+
+//Breakpoint (responsive)
+
+$max-width-mobile: 411px;
+$min-width-tablet: 768px;
+$min-width-desktop: 1024px;
+$max-width-desktop: 1440px;
+
+//Margin - Padding
+
+$container-padding: 1rem;
+$section-margin: 3rem;
+
+

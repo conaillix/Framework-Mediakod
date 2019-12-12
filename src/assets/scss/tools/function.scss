@@ -1,0 +1,37 @@
+//Tools 
+
+/*   -------------------     Colors     -------------------   */
+
+@function colorbyunit($color, $dozen, $unit){
+  $saturation: saturation($color);
+  $hue: hue($color);
+	$color: lighten($color, 100%);
+	@return hsl($hue, $saturation, (100 - ($dozen*10))+$unit);
+}
+
+@function colortoarray($color) {
+	$lightness: lightness($color);
+	$dozen: floor($lightness / 10);
+	$unit: $lightness - ($dozen * 10);
+	$result: (0 : colorbyunit($color, 0, $unit),
+				 1 : colorbyunit($color, 1, $unit),
+				 2 : colorbyunit($color, 2, $unit),
+				 3 : colorbyunit($color, 3, $unit),
+				 4 : colorbyunit($color, 4, $unit),
+				 5 : colorbyunit($color, 5, $unit),
+				 6 : colorbyunit($color, 6, $unit),
+				 7 : colorbyunit($color, 7, $unit),
+				 8 : colorbyunit($color, 8, $unit),
+				 9 : colorbyunit($color, 9, $unit));
+	@return $result;
+}
+
+@each $name, $color in $colors{
+  @each $suffix, $value in colortoarray($color) {
+  .c-#{$name}-#{$suffix} {
+   	background-color: $value;
+  	}
+    
+  }
+}
+ 

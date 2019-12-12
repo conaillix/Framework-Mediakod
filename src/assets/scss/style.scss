@@ -1,0 +1,32 @@
+//style
+
+//Settings
+@import "settings/settings.scss";
+@import "settings/colors.scss";
+@import "settings/fonts.scss";
+
+//Tools
+@import "tools/tools.scss";
+@import "tools/function.scss";
+@import "tools/mixin.scss";
+
+//Generic
+@import "generic/generic.scss";
+@import "generic/typography.scss";
+@import "generic/layout.scss";
+
+//Components
+@import "components/nav.scss";
+@import "components/loud.scss";
+@import "components/footer.scss";
+@import "components/alerts.scss";
+@import "components/search.scss";
+@import "components/buttons.scss";
+@import "components/breadcrumb.scss";
+
+//Utilities
+@import "utilities/utilities.scss";
+@import "utilities/accessibility.scss";
+@import "utilities/screenreader.scss";
+@import "utilities/highcontrast.scss";
+@import "utilities/print.scss";

@@ -1,0 +1,67 @@
+//colors.scss
+
+/*   -------------------     Colors     -------------------   */
+
+//colors-text
+
+$c-font-base: #000;
+$c-title: #000;
+$c-link: blue;
+
+//colors-button
+
+$c-success: green;
+$c-error: red;
+$c-action: #BADA55;
+
+//colors-background
+
+$c-primary: #801f1f;
+$c-secondary: #BADA55;
+$c-tertiary: #0000ff;
+
+//colors-default
+
+$c-black:	  #000000	;
+$c-silver:  #c0c0c0	;
+$c-gray:    #808080	;
+$c-white:	  #ffffff	;
+$c-maroon:  #800000	;
+$c-red:	    #ff0000	;
+$c-purple:  #800080	;
+$c-fuchsia:	#ff00ff	;
+$c-green:   #008000	;
+$c-lime:    #00ff00	;
+$c-olive:	  #808000	;
+$c-yellow:  #ffff00	;
+$c-navy:    #000080	;
+$c-blue:    #0000ff	;
+$c-teal:    #008080	;
+$c-aqua:    #00ffff ;
+
+//Ajouter les variables dans la liste pour les nuances de couleurs
+//Pour chaque couleur, 10 nouvelles class se créent avec chacune une luminosité différente 
+//avec la nomenclature suivante .c-red-1  --> 1 = le plus clair, 10 = le plus sombre
+
+$colors: (
+  "green":    $c-green,
+  "red":      $c-red,
+  "blue":     $c-blue,
+  "black":    $c-black,
+  "silver":   $c-silver,
+  "gray":     $c-gray,
+  "white":    $c-white,
+  "maroon":   $c-maroon,
+  "purple":   $c-purple,
+  "fuchsia":  $c-fuchsia,
+  "lime":     $c-lime,
+  "olive":    $c-olive,
+  "yellow":   $c-yellow,
+  "navy" :    $c-navy,
+  "teal" :    $c-teal,
+  "aqua" :    $c-aqua,
+  "primary":  $c-primary,
+  "secondary":$c-secondary,
+  "tertiary": $c-tertiary
+);
+

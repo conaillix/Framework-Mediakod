@@ -1,0 +1,55 @@
+//fonts.scss
+
+/*   -------------------     Fonts     -------------------   */
+
+//Text
+
+$base-font: "",sans-serif;
+$base-lineheight: 1.5;
+$base-fontsize: 1rem;
+$base-weight: 400;
+
+$text-maxwidth: 64ch;
+
+$base-fontsize-mobile: 1rem;
+$base-fontsize-tablet: 1rem;
+$base-fontsize-desktop: 1rem;
+
+//Titles
+
+$title-font: "",sans-serif;
+$title-lineheight: 1.1;
+$title-weight: 700;
+
+//Links
+
+$link-font: $base-font;
+$link-lineheight: $base-lineheight;
+$link-size: $base-fontsize;
+
+//Button
+
+$btn-font: $base-font;
+$btn-lineheight: $base-lineheight;
+$btn-size: $base-fontsize;
+$btn-color: $c-action;
+
+//Quotes
+
+$quotes-font: $base-font;
+$quotes-weight: $base-weight;
+$quotes-lineheight: $base-lineheight;
+$quotes-size: $base-fontsize;
+$quotes-color: $c-font-base;
+$quotes-maxwidth: $text-maxwidth;
+$quotes-fontstyle: italic;
+
+$cite-font: $base-font;
+$cite-weight: $base-weight;
+$cite-size: $base-fontsize;
+
+//forms
+
+$form-font: $base-font;
+$form-size: $base-fontsize;
+$form-color: $c-font-base;

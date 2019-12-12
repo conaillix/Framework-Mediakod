@@ -1,0 +1,117 @@
+//Tools
+
+/*   -------------------     Mixin     -------------------   */
+
+//Textes caché mais lisible par screenreader
+
+@mixin vh($focusable: false) {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+
+	@if $focusable {
+		@include vh-focusable;
+	}
+}
+
+@mixin vh-reset {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
+}
+
+//Focus via navigation au clavier
+
+@mixin vh-focusable {
+	&:active,
+	&:focus {
+		clip: auto;
+		height: auto;
+		margin: 0;
+		overflow: visible;
+		position: static;
+		width: auto;
+	}
+}
+
+//Invisible visuellement et par screenreader
+
+@mixin hidden {
+	display: none;
+	visibility: hidden;
+}
+
+//Pour ::after et::before 
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+  content: $content;
+  display: $display;
+  position: $pos;
+}
+
+//Pour maintenir le ratio des images et background images en responsive 
+
+@mixin responsive-ratio($x,$y, $pseudo: false) {
+  $padding: unquote( ( $y / $x ) * 100 + '%' );
+  @if $pseudo {
+      &:before {
+          @include pseudo($pos: relative);
+          width: 100%;
+          padding-top: $padding;
+      }
+  } @else {
+      padding-top: $padding;
+  }
+}
+
+//Pour caché un texte mais en maintenant le block et le layout
+
+@mixin truncate($truncation-boundary) {
+  max-width: $truncation-boundary;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+//Images retina en background -> exemple: 
+/*
+  @include retina {
+		background-image: url(../img/background@2x.png);
+	}
+*/
+
+@mixin retina {
+	@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (-moz-min-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3 / 2),
+	only screen and (min-device-pixel-ratio: 1.5),
+	only screen and (min-resolution: 1.5dppx) {
+		@content;
+	}
+}
+
+//Pour utiliser des icons en pseudo elements
+
+@mixin icon-css($content: false) {
+	@if $content {
+		content: '#{$content}';
+	}
+	display: block;
+	font-family: 'icon-font-family' !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}

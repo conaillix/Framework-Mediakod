@@ -1,0 +1,33 @@
+//print
+
+@media print{
+  :root{
+      --gap: 1rem;
+  }
+
+  #background-s{
+      display: none;
+  }
+
+  .navbar li:not(#brand){
+      display: none;
+  }
+
+  .navbar button{
+      display: none;
+  }
+
+  main{
+      min-height: auto;
+  }
+
+  section .inner{
+      background-color: white;
+  }
+
+  main, section, section .inner{
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+  }
+}

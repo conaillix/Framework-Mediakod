@@ -1,0 +1,100 @@
+//typography.scss
+
+//body
+
+body{
+  font-family: $base-font;
+  font-size: $base-fontsize;
+  font-weight: $base-weight;
+  line-height: $base-lineheight;
+  color: $c-font-base;
+
+  @media (min-width: $max-width-mobile){
+    font-size: $base-fontsize-mobile;
+  }
+  @media (min-width: $min-width-tablet){
+    font-size: $base-fontsize-tablet;
+  }
+  @media (min-width: $min-width-desktop){
+    font-size: $base-fontsize-desktop;
+  }
+  
+}
+
+//Title
+
+h1,h2,h3,h4,h5,h6{
+  line-height: $title-lineheight;
+  font-family: $title-font;
+  font-weight: $title-weight;
+
+  margin:0;
+}
+
+//Paragraph
+
+section p{
+  max-width: $text-maxwidth;
+}
+
+//forms
+
+form input{
+  font-family: $form-font;
+  font-size: $form-size;
+  color: $form-color;
+}
+
+//List
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+//Link
+
+a{
+  color: $c-link;
+  display: inline-block;
+  transition: all .2s;
+  text-decoration: underline $c-link;
+
+  &:hover,
+  &:active,
+  &:focus{
+      text-decoration: none;
+  }
+
+   @media (min-width:$min-width-desktop){
+    text-decoration: none;
+
+    &:hover,
+    &:active,
+    &:focus{
+      text-decoration: underline $c-link;
+    }
+   }
+}
+
+//Quote
+
+blockquote, q{
+  font-family: $quotes-font;
+  font-size: $quotes-size;
+  line-height: $quotes-lineheight;
+  color: $quotes-color;
+  font-weight: $quotes-weight;
+  font-style: $quotes-fontstyle;
+
+  max-width: $quotes-maxwidth;
+}
+
+cite{
+  font-family: $cite-font;
+  font-size: $cite-size;
+  font-weight: $cite-weight;
+}
+
+//Reset
