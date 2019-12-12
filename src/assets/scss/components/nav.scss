@@ -9,19 +9,51 @@ header{
       transition: all .3s ease-out;
 
       @include vh(true);
+
+      li{
+        margin:  .5rem 0 0;
+      }
+      a{
+        display: block;
+        padding: .5rem;
+        text-decoration: none;
+        padding-left: 0;
+        transition: padding-left .2s;
+
+        &:hover,
+        &:active,
+        &:focus{
+            padding-left: 1rem;
+
+        }
+      }
     } 
 
-    @media (min-width: $min-width-tablet) {
+    @media (min-width: $nav-main-query) {
       ul{
         @include vh-reset;
         flex-flow: row wrap;
+
+        & > li{
+
+          padding: $gap-small;
+          padding: 0 var(--gap, $gap-small);
+        }
+
+        & > li:first-child{
+            margin-left: auto;
+        }
+
+        & > li:last-child{
+            padding-right: 0;
+        }
       }
-    }
+    } 
  
   }
 
   .toggle-menu{
-    @media (min-width: $min-width-tablet){
+    @media (min-width: $nav-main-query){
       display: none;
     }
   }

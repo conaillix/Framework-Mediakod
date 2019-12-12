@@ -1,5 +1,11 @@
 // Settings
 
+@function rem($size) {
+	$remSize: $size / 16px;
+
+	@return #{$remSize}rem;
+}
+
 //   -------------------     Layout    -------------------  
 
 //Grid
@@ -28,5 +34,6 @@ $gap-large: 2rem;
 $grid-query-medium: rem(780px);
 $grid-query-large: rem(1440px);
 
+//effectue le switch en vue horizontale et verticale
 $nav-main-query: rem(780px);
 
