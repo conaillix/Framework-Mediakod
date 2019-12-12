@@ -10,23 +10,13 @@ body{
   color: $c-font-base;
 
   @media (min-width: $max-width-mobile){
-    $base-fontsize: 1rem;
-  }
-  @media (min-width: $min-width-tablet){
-    $base-fontsize: 1rem;
-  }
-  @media (min-width: $min-width-desktop){
-    $base-fontsize: 3rem;
-  }
-
-  @media (min-width: $max-width-mobile){
     font-size: $base-fontsize;
   }
   @media (min-width: $min-width-tablet){
-    font-size: $base-fontsize;
+    font-size: $fontsize-medium;
   }
   @media (min-width: $min-width-desktop){
-    font-size: $base-fontsize;
+    font-size: $fontsize-large;
   }
   
 }
@@ -52,7 +42,7 @@ section p{
 
 form input{
   font-family: $form-font;
-  font-size: $form-size;
+  font-size: $form-fontsize;
   color: $form-color;
 }
 
@@ -93,7 +83,7 @@ a{
 
 blockquote, q{
   font-family: $quotes-font;
-  font-size: $quotes-size;
+  font-size: $quotes-fontsize;
   line-height: $quotes-lineheight;
   color: $quotes-color;
   font-weight: $quotes-weight;
@@ -104,7 +94,7 @@ blockquote, q{
 
 cite{
   font-family: $cite-font;
-  font-size: $cite-size;
+  font-size: $cite-fontsize;
   font-weight: $cite-weight;
 }
 

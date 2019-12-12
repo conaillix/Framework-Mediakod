@@ -11,10 +11,10 @@ $base-weight: 400;
 
 $text-maxwidth: 64ch;
 
-$font-size-smaller: .8rem;
-$font-size-small: 1rem;
-$font-size-medium: 1.125rem;
-$font-size-large: 1.25rem;
+$fontsize-smaller: .8rem;
+$fontsize-small: 1rem;
+$fontsize-medium: 1.125rem;
+$fontsize-large: 1.25rem;
 
 //Titles
 
@@ -29,13 +29,13 @@ $title-main-fontsize: 6rem;
 
 $link-font: $base-font;
 $link-lineheight: $base-lineheight;
-$link-size: $base-fontsize;
+$link-fontsize: $base-fontsize;
 
 //Button
 
 $btn-font: $base-font;
 $btn-lineheight: $base-lineheight;
-$btn-size: $base-fontsize;
+$btn-fontsize: $base-fontsize;
 $btn-color: $c-action;
 
 //Quotes
@@ -43,17 +43,17 @@ $btn-color: $c-action;
 $quotes-font: $base-font;
 $quotes-weight: $base-weight;
 $quotes-lineheight: $base-lineheight;
-$quotes-size: $base-fontsize;
+$quotes-fontsize: $base-fontsize;
 $quotes-color: $c-font-base;
 $quotes-maxwidth: $text-maxwidth;
 $quotes-fontstyle: italic;
 
 $cite-font: $base-font;
 $cite-weight: $base-weight;
-$cite-size: $base-fontsize;
+$cite-fontsize: $base-fontsize;
 
 //forms
 
 $form-font: $base-font;
-$form-size: $base-fontsize;
+$form-fontsize: $base-fontsize;
 $form-color: $c-font-base;

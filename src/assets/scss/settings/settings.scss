@@ -1,11 +1,5 @@
 // Settings
 
-@function rem($size) {
-	$remSize: $size / 16px;
-
-	@return #{$remSize}rem;
-}
-
 //   -------------------     Layout    -------------------  
 
 //Grid
