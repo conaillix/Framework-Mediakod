@@ -1,0 +1,17 @@
+.btn{
+  color: $c-white;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  &--success{
+    @extend .btn;
+    background-color: $c-success;
+  }
+  &--error{
+    @extend .btn;
+    background-color: $c-error;
+  }
+  &--action{
+    @extend .btn;
+    background-color: $c-action;
+  }
+}

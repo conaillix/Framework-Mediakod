@@ -1,0 +1,17 @@
+.breadcrumb {
+  padding: 1rem;
+  background-color: var(--c-gray-3);
+}
+
+/* Display list items side by side */
+.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}

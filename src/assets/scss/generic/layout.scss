@@ -1,17 +1,3 @@
-//Layout
-
-.container{
-  width: 100%;
-  max-width: $max-width-desktop;
-  margin: 0 auto;
-  padding: 0 $container-padding;
-}
-
-section{
-  margin-bottom: $section-margin; 
-  width: 100%;
-}
-
 //Gap 
 
 :root{
@@ -40,4 +26,30 @@ section{
         grid-gap: $gap-large;
         grid-gap: var(--gap, $gap-large);
 	}
+}
+
+//Layout
+
+.container{
+  position: relative;
+  width: 100%;
+  max-width: $max-width-desktop;
+  margin: 0 auto;
+  padding: 0 $gap-small;
+  padding: 0 var(--gap, $gap-small);
+
+  @media(min-width: $grid-query-medium){
+      padding: 0 $gap-medium;
+      padding: 0 var(--gap, $gap-medium);
+  }
+
+  @media(min-width: $grid-query-large){
+        padding: 0 $gap-large;
+        padding: 0 var(--gap, $gap-large);
+  }
+}
+
+section{
+  margin-bottom: $section-margin; 
+  width: 100%;
 }

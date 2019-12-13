@@ -1,3 +1,5 @@
-h1{
-  @include abs-center;
+.loud{
+  h1{
+    @include abs-center;
+  }
 }

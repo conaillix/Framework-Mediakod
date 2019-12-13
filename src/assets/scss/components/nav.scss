@@ -1,6 +1,7 @@
 //nav.scss
 
 header{
+  
   nav{
     position: relative;
     ul{
@@ -53,10 +54,47 @@ header{
     @media (min-width: $nav-main-query){
       display: none;
     }
+    padding: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    font: inherit;
+    span{
+      margin: 0 auto;
+      transition: all .3s ease-out;
+      position: relative;
+      display: block;
+      width: 1.6rem;
+      height: .125rem;
+      background-color: $c-font-base;
+      margin-bottom: .5rem;
+
+      &:nth-child(1){
+          transform-origin: left top;
+      }
+      &:nth-child(3){
+          transform-origin: left bottom;
+      }
+    } 
   }
 
   
 }
 .active{
   nav ul{@include vh-reset;}
+  .toggle-menu{
+    span{
+      padding: 0 .6rem;
+      &:nth-child(1){
+          transform:translateX(.3rem) translateY(.08rem)  rotate(45deg);
+      }
+      &:nth-child(2){
+          opacity: 0;
+      }
+      &:nth-child(3){
+          transform:translateX(.3rem) translateY(-.08rem) rotate(-45deg);
+      }
+    }
+  }
 }
